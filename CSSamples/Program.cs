@@ -89,15 +89,48 @@ namespace csBookSamples
             /*Section 4 - Strings*/
 
             /*Section 5 - Typecasting*/
+            Console.WriteLine("\n\n############\nSection 5 - Typecasting\n############");
+            int a = 3;
+            //If we add 1.1 to a, we will lose .1 and a will become 4
+            double b = (double)(a);
+            //If we were to now add 1.1 to b we will get 4.1
+            b += 1.1;
+            Console.WriteLine("a: " + a);
+            Console.WriteLine("b: " + b);
 
             /*Section 6 - Operators*/
+            Console.WriteLine("\n\n############\nSection 6 - Operators\n############");
+            //Have already been working with = so skip that
+            //Basic Math operators
+            int c = 5;
+            int d = 3;
+            Console.WriteLine("Setting a equal to 5 and b equal to 3");
+            Console.WriteLine("Add: " + (c + d));
+            Console.WriteLine("Subtract: " + (c - d));
+            Console.WriteLine("Multiply: " + (c * d));
+            Console.WriteLine("Divide: " + (c / d));
+            double e = 3.1;
+            double f = 1.5;
+            Console.WriteLine("Setting c equal to 3.1 and d equal to 1.5");
+            Console.WriteLine("Add: " + (e + f));
+            Console.WriteLine("Subtract: " + (e - f));
+            Console.WriteLine("Multiply: " + (e * f));
+            Console.WriteLine("Divide: " + (e / f));
+            //Modulus
+            //Earlier we divided 5 by 3 and got 1 in return
+            //Now if we ask for the modulus of 5 and 3, we will get
+            //the remainder of that divide operation
+            Console.WriteLine("Modulus of 5 and 3: " + c % d);
+
+            //Greater than, less than, greater than or equal to, less than or equal to
+            //Logical operators
 
             /*Section 7 - Complex Containers*/
             Console.WriteLine("\n\n############\nSection 7 - Complex Containers\n############");
-            Dictionary<string, string> d = new Dictionary<string, string>();
-            d.Add("firstName", "Jon");
-            d.Add("lastName", "Snow");
-            foreach (KeyValuePair<string, string> item in d)
+            Dictionary<string, string> myDictionary = new Dictionary<string, string>();
+            myDictionary.Add("firstName", "Jon");
+            myDictionary.Add("lastName", "Snow");
+            foreach (KeyValuePair<string, string> item in myDictionary)
             {
                 Console.WriteLine(item.Key + ": " + item.Value);
             }
