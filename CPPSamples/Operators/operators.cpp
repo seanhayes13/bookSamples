@@ -7,25 +7,28 @@ void main() {
 	cout << "\n\n############\nSection 6 - Operators\n############" << endl;
 	//Have already been working with = so skip that
 	//Basic Math operators
-	int c = 5;
-	int d = 3;
+	int a = 5;
+	int b = 3;
 	cout << "Setting a equal to 5 and b equal to 3" << endl;
+	cout << "Add: " << a + b << endl;
+	cout << "Subtract: " << a - b << endl;
+	cout << "Multiply: " << a * b << endl;
+	cout << "Divide: " << a / b << endl;
+	//Now let's work with some doubles
+	double c = 3.1;
+	double d = 1.5;
+	cout << "Setting c equal to 3.1 and d equal to 1.5" << endl;
 	cout << "Add: " << c + d << endl;
 	cout << "Subtract: " << c - d << endl;
 	cout << "Multiply: " << c * d << endl;
 	cout << "Divide: " << c / d << endl;
-	double e = 3.1;
-	double f = 1.5;
-	cout << "Setting c equal to 3.1 and d equal to 1.5" << endl;
-	cout << "Add: " << e + f << endl;
-	cout << "Subtract: " << e - f << endl;
-	cout << "Multiply: " << e * f << endl;
-	cout << "Divide: " << e / f << endl;
 	//Modulus
 	//Earlier we divided 5 by 3 and got 1 in return
 	//Now if we ask for the modulus of 5 and 3, we will get
 	//the remainder of that divide operation
-	cout << "Modulus of 5 and 3: " << c % d << endl;
+	cout << "Modulus of 5 and 3: " << a % b << endl;
+	//NOTE: you cannot use modulus with doubles or any number that has
+	//a fractional value.
 
 	//Greater than, less than, greater than or equal to, less than or equal to
 	/*Let's start by doing some simple math comparisons.*/
@@ -49,6 +52,28 @@ void main() {
 	else {
 		cout << "4 is not less than or equal to 4" << endl;
 	}
+
+	//Double Equal
+	/*The double equal sign is used to check for equality*/
+	if (3 == 3) {
+		cout << "3 is equal to 3" << endl;
+	}
+	if ("first" == "first") {
+		cout << "These two words are the same" << endl;
+	}
+	string first = "first";
+	string second = "first";
+	if (first == second) {
+		cout << "These two variables have the same value" << endl;
+	}
+
+	//Brackets
+	//Square brackets
+	int intArray[5];
+	intArray[0] = 13;
+	cout << "The first element in the array is " << intArray[0] << endl;
+	//Curly brackets
+	//Parentheses
 
 	//Logical operators
 	/*For this section we are going to start by checking the four possibilities of
