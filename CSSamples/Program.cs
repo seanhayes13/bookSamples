@@ -87,16 +87,33 @@ namespace csBookSamples
             Console.WriteLine("grades size: " + grades.Count);
 
             /*Section 4 - Strings*/
+            Console.WriteLine("\n\n############\nSection 4 - Strings\n############");
+            string testString = "the quick brown fox jumped over the lazy dog";
+            Console.WriteLine(testString.Length);
+            string[] words = testString.Split(' ');
+            Console.WriteLine("Length of words: " + words.Length);
+            Console.WriteLine("First word: " + words[0]);
+            Console.WriteLine("Last word: " + words[words.Length-1]);
+            string testString2 = string.Join(" ", words);
+            Console.WriteLine("testString2: " + testString2);
+            Console.WriteLine("testString as all upper case: " + testString.ToUpper());
+            string allUpperStart = "LOL";
+            Console.WriteLine("allUpperStart as lower case: " + allUpperStart.ToLower());
 
             /*Section 5 - Typecasting*/
             Console.WriteLine("\n\n############\nSection 5 - Typecasting\n############");
             int a = 3;
-            //If we add 1.1 to a, we will lose .1 and a will become 4
-            double b = (double)(a);
+            //If you were to uncomment the line below, you would receive an error saying
+            //that the compiler cannot implicity convert type double to int.
+            //a += 1.1;
+            double b = (double)a;
+            //Now b is equal to 3.0
             //If we were to now add 1.1 to b we will get 4.1
             b += 1.1;
             Console.WriteLine("a: " + a);
             Console.WriteLine("b: " + b);
+            int a2 = (int)3.6;
+            Console.WriteLine("a2: " + a2);
 
             /*Section 6 - Operators*/
             Console.WriteLine("\n\n############\nSection 6 - Operators\n############");
